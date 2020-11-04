@@ -1,0 +1,42 @@
+Index: lib/main.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lib/main.dart	(revision 3bf73aeab1b61ac20efb192c161aab2400af1f31)
++++ lib/main.dart	(date 1604471388697)
+@@ -8,6 +8,7 @@
+   runApp(MyApp());
+ }
+ 
++//메인 App
+ class MyApp extends StatelessWidget {
+   // This widget is the root of your application.
+   @override
+@@ -16,7 +17,7 @@
+ 
+     return MaterialApp(
+       //안드로이드앱으로 만들꺼라서 ioS면 바꿔야함
+-      title: 'PRACTICE FLUTTER DAY1',
++      title: '이 타이틀은 어디에다 쓰는가?',
+       theme: ThemeData(
+         primarySwatch: Colors.orange,///////////이거바꾸면 스위치색깔도 바꿔지네
+         visualDensity: VisualDensity.adaptivePlatformDensity,
+Index: lib/ui/Test.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lib/ui/Test.dart	(date 1604471739842)
++++ lib/ui/Test.dart	(date 1604471739842)
+@@ -0,0 +1,10 @@
++
++
++import 'package:flutter/material.dart';
++
++class AnimationPage extends StatelessWidget {
++  @override
++  Widget build(BuildContext context) {
++    return Container();
++  }
++}

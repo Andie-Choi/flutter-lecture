@@ -8,6 +8,7 @@ void main() {
   runApp(MyApp());
 }
 
+//메인 App
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       //안드로이드앱으로 만들꺼라서 ioS면 바꿔야함
-      title: 'PRACTICE FLUTTER DAY1',
+      title: '이 타이틀은 어디에다 쓰는가?',
       theme: ThemeData(
         primarySwatch: Colors.orange,///////////이거바꾸면 스위치색깔도 바꿔지네
         visualDensity: VisualDensity.adaptivePlatformDensity,

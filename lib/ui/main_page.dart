@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/ui/animation_page.dart';
 import 'package:flutter_app/ui/first_page.dart';
 import 'package:flutter_app/ui/second_page.dart';
 import 'package:flutter_app/ui/third_page.dart';
@@ -18,6 +19,7 @@ class _MainPageState extends State<MainPage> {
     FirstPage(),
     SecondPage(),
     ThirdPage(),
+    AnimationPage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -28,6 +30,7 @@ class _MainPageState extends State<MainPage> {
       //처음에는 0
       bottomNavigationBar: BottomNavigationBar(
         //아래에 있는 네비게이션 바 영역 활성화
+        type: BottomNavigationBarType.fixed,
         items : [
           BottomNavigationBarItem(
               icon: Icon(Icons.home),
@@ -36,6 +39,10 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(
               icon: Icon(Icons.design_services),
               label : ("이용서비스")
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.design_services),
+              label : ("애니메이션효과")
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.info_outline),
